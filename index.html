@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Calculator -->
+    <div class="calculator">
+      <div data-aos="zoom-in" data-aos-delay="600" class="calculator-display">
+        <h1>0</h1>
+      </div>
+      <!-- Buttons -->
+      <div class="calculator-buttons">
+        <button data-aos="zoom-in-down" class="operator" value="+">+</button>
+        <button data-aos="zoom-in-down" class="operator" value="-">-</button>
+        <button data-aos="zoom-in-down" class="operator" value="*">x</button>
+        <button data-aos="zoom-in-down" class="operator" value="/">÷</button>
+        <button data-aos="zoom-in-right" value="7">7</button>
+        <button data-aos="zoom-in-right" value="8">8</button>
+        <button data-aos="zoom-in-right" value="9">9</button>
+        <button data-aos="zoom-in-right" value="4">4</button>
+        <button data-aos="zoom-in-right" value="5">5</button>
+        <button data-aos="zoom-in-right" value="6">6</button>
+        <button data-aos="zoom-in-right" value="1">1</button>
+        <button data-aos="zoom-in-right" value="2">2</button>
+        <button data-aos="zoom-in-right" value="3">3</button>
+        <button data-aos="zoom-in-right" class="decimal" value=".">.</button>
+        <button data-aos="zoom-in-right" value="0">0</button>
+        <button data-aos="zoom-in-right" class="clear" id="clear-button">
+          C
+        </button>
+        <button data-aos="zoom-in-left" class="equal-sign operator" value="=">
+          =
+        </button>
+      </div>
+    </div>
+    <!-- script -->
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+      });
+    </script>
+  </body>
+</html>
